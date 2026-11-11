@@ -1,0 +1,390 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Arunraj S Earth Tones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout concept: a warm, comfortable developer profile in the Warm Earth Tones palette
+     (#D9BF77, #A45A3D, #6B4226, #C4B6A6, #E8DAB2). Stack layers take terracotta, brown, taupe and gold;
+     deeper shades of the same palette keep small text readable. Token names are kept from the first version. */
+  :root {
+    --bg: #e8dab2;
+    --surface: #f3ead0;
+    --line: #c4b6a6;
+    --fg: #4f2f1a;
+    --muted: #6b4226;
+    --accent: #a45a3d;
+    --on-accent: #fff9e8;
+    --accent-ink: #8f4a30;
+
+    --coral: #8f4a30;
+    --violet: #6b4226;
+    --cyan: #6e5f4c;
+    --amber: #7a5c0c;
+    --green: #8f4a30;
+    --pink: #8f4a30;
+
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "Consolas", monospace;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 0;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  /* top bar */
+  .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding-block: 22px; }
+  .brand { font-family: var(--font-display); font-weight: 800; letter-spacing: .04em; font-size: 18px; text-decoration: none; }
+  .nav { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 14.5px; font-weight: 500; }
+  .nav a { text-decoration: none; color: var(--muted); padding-block: 4px; }
+  .nav a:hover { color: var(--fg); }
+
+  /* hero */
+  .hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 40px; align-items: center; padding-block: 44px 72px; }
+  .hero::before {
+    content: ""; position: absolute; inset: -40px -16px 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(520px 320px at 8% 10%, color-mix(in srgb, #d9bf77 60%, transparent), transparent 70%),
+      radial-gradient(480px 340px at 95% 70%, color-mix(in srgb, #a45a3d 14%, transparent), transparent 70%);
+  }
+  .status { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+  .status i { width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px color-mix(in srgb, var(--green) 25%, transparent); }
+  h1 { font-size: clamp(44px, 8vw, 84px); font-weight: 800; letter-spacing: -.02em; margin-top: 18px; }
+  .role { font-family: var(--font-display); font-size: clamp(20px, 3vw, 28px); font-weight: 600; margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+  .role .a { color: var(--coral); } .role .b { color: var(--violet); }
+  .role .sep { color: var(--muted); font-weight: 500; }
+  .lede { max-width: 56ch; margin-top: 20px; color: var(--muted); font-size: 17.5px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .btn { font: inherit; font-weight: 600; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px; border: 1.5px solid var(--accent); text-decoration: none; cursor: pointer; transition: transform .15s ease; }
+  .btn.primary { background: var(--accent); color: var(--on-accent); }
+  .btn.ghost { background: transparent; color: var(--accent-ink); }
+  .btn:hover { transform: translateY(-2px); }
+
+  /* stack card */
+  .stack { display: flex; flex-direction: column; align-items: stretch; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 24px 50px -28px color-mix(in srgb, var(--accent) 60%, transparent); }
+  .stack-title { font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+  .layer { border-radius: 12px; padding: 14px 16px; display: grid; gap: 2px; background: color-mix(in srgb, var(--c) 17%, var(--surface)); }
+  .layer b { font-family: var(--font-display); font-size: 19px; color: var(--c); }
+  .layer span { font-size: 13.5px; color: var(--muted); }
+  .l-front { --c: var(--coral); } .l-back { --c: var(--violet); } .l-data { --c: var(--cyan); }
+  .link { display: flex; align-items: center; gap: 10px; padding: 8px 0 8px 22px; font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+  .link::before { content: ""; width: 2px; height: 22px; background: var(--line); border-radius: 2px; }
+
+  /* sections */
+  section { padding-block: 56px; border-top: 1px solid var(--line); }
+  .sec-head { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 1fr); gap: 16px 40px; }
+  h2 { font-size: clamp(28px, 4vw, 38px); font-weight: 700; letter-spacing: -.01em; }
+  .sec-body { min-width: 0; }
+
+  .about p { max-width: 64ch; font-size: 17px; }
+  .about p + p { margin-top: 14px; color: var(--muted); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-top: 28px; }
+  .fact { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .fact strong { display: block; font-family: var(--font-display); font-size: 24px; line-height: 1.15; color: var(--c); }
+  .fact span { font-size: 13.5px; color: var(--muted); }
+  .f1 { --c: var(--amber); } .f2 { --c: var(--coral); } .f3 { --c: var(--green); } .f4 { --c: var(--cyan); }
+
+  /* skills */
+  .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .skill-group { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+  .skill-group h3 { font-size: 17px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+  .skill-group h3::before { content: ""; width: 12px; height: 12px; border-radius: 4px; background: var(--c); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-size: 13.5px; font-weight: 500; padding: 5px 11px; border-radius: 999px; background: color-mix(in srgb, var(--c) 18%, var(--surface)); color: var(--c); }
+  .g-front { --c: var(--coral); } .g-back { --c: var(--violet); } .g-data { --c: var(--cyan); } .g-tools { --c: var(--amber); }
+
+  /* experience */
+  .jobs { display: grid; gap: 18px; }
+  .job { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; grid-template-columns: minmax(0, 210px) minmax(0, 1fr); gap: 14px 28px; }
+  .job h3 { font-size: 21px; }
+  .job .meta { color: var(--muted); font-size: 14.5px; margin-top: 4px; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 12px; padding: 3px 10px; border-radius: 999px; margin-top: 10px; background: color-mix(in srgb, var(--c) 18%, var(--surface)); color: var(--c); }
+  .pill.now { --c: var(--green); } .pill.past { --c: var(--violet); } .pill.intern { --c: var(--amber); }
+  .job ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+  .job li::marker { color: var(--accent); }
+
+  /* projects */
+  .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  .project { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .badge { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: 18px; background: color-mix(in srgb, var(--c) 20%, var(--surface)); color: var(--c); }
+  .project h3 { font-size: 24px; }
+  .project .kind { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); margin-top: -6px; }
+  .project p { color: var(--muted); }
+  .project .chips { margin-top: auto; }
+  .p-bank { --c: var(--violet); } .p-log { --c: var(--amber); }
+
+  /* education + cert */
+  .pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .card .k { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--c); }
+  .card h3 { font-size: 22px; margin-top: 8px; }
+  .card p { color: var(--muted); margin-top: 6px; }
+  .c-deg { --c: var(--green); } .c-cert { --c: var(--cyan); }
+
+  /* contact */
+  .contact-box { background: #d9bf77; color: #3f2514; border-radius: 20px; padding: clamp(24px, 5vw, 44px); display: grid; gap: 20px; }
+  .contact-box h2 { font-size: clamp(28px, 5vw, 44px); }
+  .contact-box > p { max-width: 54ch; }
+  .rows { display: grid; gap: 12px; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; background: rgba(255, 249, 232, .55); border-radius: 12px; padding: 12px 14px; }
+  .row .label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; min-width: 74px; color: #6b4226; }
+  .row .val { font-family: var(--font-mono); font-size: clamp(14px, 3.6vw, 17px); overflow-wrap: anywhere; min-width: 0; flex: 1 1 200px; user-select: all; }
+  .row a.val { text-decoration: underline; text-underline-offset: 3px; user-select: auto; }
+  .copy, .open { font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; background: #6b4226; color: #fff9e8; border: 0; border-radius: 9px; padding: 8px 16px; text-decoration: none; }
+  .copy:hover, .open:hover { transform: translateY(-2px); }
+
+  footer { padding-block: 32px 40px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 780px) {
+    .hero { grid-template-columns: minmax(0, 1fr); padding-block: 28px 48px; }
+    .sec-head, .job { grid-template-columns: minmax(0, 1fr); }
+    section { padding-block: 44px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn, .copy, .open { transition: none; }
+    .btn:hover, .copy:hover, .open:hover { transform: none; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">ARUNRAJ S</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <div class="status"><i></i> Looking for my next full stack role</div>
+        <h1>ARUNRAJ S</h1>
+        <div class="role"><span>Full Stack Developer</span><span class="sep">/</span><span class="a">Angular</span><span class="sep">+</span><span class="b">C#</span></div>
+        <p class="lede">I'm a full stack developer with 3 years of experience. I work mostly in Angular and C#, and I enjoy taking a feature all the way from the screen to the database.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/arunraj-s-75bb38240" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="stack" role="img" aria-label="Stack diagram: Angular front end calls a C# ASP.NET Core Web API, which queries SQL Server">
+        <div class="stack-title">How I build</div>
+        <div class="layer l-front"><b>Angular</b><span>TypeScript, components, forms, routing</span></div>
+        <div class="link">REST / JSON</div>
+        <div class="layer l-back"><b>C# and ASP.NET Core</b><span>Web API, business rules, validation</span></div>
+        <div class="link">queries</div>
+        <div class="layer l-data"><b>SQL Server</b><span>Tables, procedures, reporting data</span></div>
+      </div>
+    </div>
+
+    <section id="about" class="about">
+      <div class="sec-head">
+        <h2>About me</h2>
+        <div class="sec-body">
+          <p>Hi, I'm Arunraj. I began as an intern at Race 2 Cloud, working on Zoho products, then moved into full stack development at Digitalhoop Technologies. Today I'm at Saksoft, building features for the HDFC Prima banking project in Angular and C#.</p>
+          <p>I like work where the small details matter: a form that catches bad input before it goes anywhere, or an API that gives the same answer every time. I finished my MCA and I'm CargoWise certified, so I also understand how logistics teams work.</p>
+          <div class="facts">
+            <div class="fact f1"><strong>3 years</strong><span>Working as a developer</span></div>
+            <div class="fact f2"><strong>Angular + C#</strong><span>My main stack</span></div>
+            <div class="fact f3"><strong>MCA</strong><span>Completed</span></div>
+            <div class="fact f4"><strong>CargoWise</strong><span>Certified</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="sec-head">
+        <h2>Skills</h2>
+        <div class="sec-body">
+          <div class="skill-grid">
+            <div class="skill-group g-front">
+              <h3>Front end</h3>
+              <div class="chips"><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">RxJS</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span></div>
+            </div>
+            <div class="skill-group g-back">
+              <h3>Back end</h3>
+              <div class="chips"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">ASP.NET Core</span><span class="chip">Web API</span><span class="chip">Entity Framework</span><span class="chip">LINQ</span></div>
+            </div>
+            <div class="skill-group g-data">
+              <h3>Database</h3>
+              <div class="chips"><span class="chip">SQL Server</span><span class="chip">T-SQL</span><span class="chip">Stored procedures</span><span class="chip">Query tuning</span></div>
+            </div>
+            <div class="skill-group g-tools">
+              <h3>Tools and practice</h3>
+              <div class="chips"><span class="chip">Git</span><span class="chip">REST APIs</span><span class="chip">Postman</span><span class="chip">Visual Studio</span><span class="chip">VS Code</span><span class="chip">Azure DevOps</span><span class="chip">Jira</span><span class="chip">Zoho products</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sec-head">
+        <h2>Where I've worked</h2>
+        <div class="sec-body">
+          <div class="jobs">
+            <article class="job">
+              <div>
+                <h3>Saksoft</h3>
+                <p class="meta">Full Stack Developer</p>
+                <span class="pill now">Current role</span>
+              </div>
+              <ul>
+                <li>I build Angular screens and C# services for the HDFC Prima banking project.</li>
+                <li>I work with my team on new features, bug fixes and code reviews.</li>
+                <li>I keep forms, validations and API responses accurate, because in banking even a small mistake matters.</li>
+              </ul>
+            </article>
+            <article class="job">
+              <div>
+                <h3>Digitalhoop Technologies</h3>
+                <p class="meta">Full Stack Developer</p>
+                <span class="pill past">Previous role</span>
+              </div>
+              <ul>
+                <li>I worked on web applications in Angular and C#, from the screens to the database.</li>
+                <li>I shipped features regularly and fixed issues quickly as part of a small team.</li>
+                <li>I learned to own a feature from the first idea to the day it went live.</li>
+              </ul>
+            </article>
+            <article class="job">
+              <div>
+                <h3>Race 2 Cloud</h3>
+                <p class="meta">Intern, Zoho products</p>
+                <span class="pill intern">Internship</span>
+              </div>
+              <ul>
+                <li>I spent my internship learning and working with Zoho products and the cloud tools around them.</li>
+                <li>It showed me how business teams use cloud software day to day, which still shapes how I build.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="sec-head">
+        <h2>What I've built</h2>
+        <div class="sec-body">
+          <div class="projects">
+            <article class="project p-bank">
+              <div class="badge">HP</div>
+              <h3>HDFC Prima</h3>
+              <p class="kind">Banking application · Saksoft</p>
+              <p>A banking application I work on at Saksoft. I build the Angular screens and the C# services behind them, and I pay extra attention to validation and error handling because it deals with banking data.</p>
+              <div class="chips"><span class="chip">Angular</span><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">SQL Server</span></div>
+            </article>
+            <article class="project p-log">
+              <div class="badge">LG</div>
+              <h3>Logistics application</h3>
+              <p class="kind">Freight and shipment operations</p>
+              <p>An application for tracking shipments and freight operations, built around CargoWise workflows. My CargoWise certification helps me see how logistics teams actually work, so the screens make sense to them.</p>
+              <div class="chips"><span class="chip">Angular</span><span class="chip">C#</span><span class="chip">CargoWise</span><span class="chip">SQL Server</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="sec-head">
+        <h2>Education and certificate</h2>
+        <div class="sec-body">
+          <div class="pair">
+            <div class="card c-deg">
+              <div class="k">Degree</div>
+              <h3>MCA</h3>
+              <p>Master of Computer Applications, completed.</p>
+            </div>
+            <div class="card c-cert">
+              <div class="k">Certificate</div>
+              <h3>CargoWise</h3>
+              <p>Certified in the CargoWise logistics platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-box">
+        <h2>Let's talk</h2>
+        <p>If you have a full stack role open, I'd love to hear about it. You can email me, call me or message me on LinkedIn.</p>
+        <div class="rows">
+          <div class="row">
+            <span class="label">Email</span>
+            <span class="val" id="mail">arunrajava001@gmail.com</span>
+            <button class="copy" type="button" data-target="mail">Copy</button>
+          </div>
+          <div class="row">
+            <span class="label">Mobile</span>
+            <span class="val" id="phone">8637493784</span>
+            <button class="copy" type="button" data-target="phone">Copy</button>
+          </div>
+          <div class="row">
+            <span class="label">LinkedIn</span>
+            <a class="val" id="li" href="https://www.linkedin.com/in/arunraj-s-75bb38240" target="_blank" rel="noopener noreferrer">linkedin.com/in/arunraj-s-75bb38240</a>
+            <a class="open" href="https://www.linkedin.com/in/arunraj-s-75bb38240" target="_blank" rel="noopener noreferrer">Open</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Arunraj S · Full Stack Developer</footer>
+</div>
+
+<script>
+  (function () {
+    function selectNode(node) {
+      try {
+        var r = document.createRange();
+        r.selectNodeContents(node);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+      } catch (e) {}
+    }
+    var buttons = document.querySelectorAll(".copy");
+    for (var i = 0; i < buttons.length; i++) {
+      (function (btn) {
+        btn.addEventListener("click", function () {
+          var node = document.getElementById(btn.getAttribute("data-target"));
+          var text = node.textContent.trim();
+          function done(ok) {
+            if (!ok) selectNode(node);
+            btn.textContent = ok ? "Copied" : "Press Ctrl+C";
+            setTimeout(function () { btn.textContent = "Copy"; }, 2200);
+          }
+          try {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+          } catch (e) { done(false); }
+        });
+      })(buttons[i]);
+    }
+  })();
+</script>
+
+</body></html>
